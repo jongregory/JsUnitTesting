@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "Example JavaScript Unit Tests";
+}
+
+<div id="mocha"></div>
+
+@section TestScripts {
+    <script type="text/javascript" src="@Url.Content("~/scripts/app/calculator/calculator.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/scripts/Services/EmployeeService.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/scripts/app/views/employee/Main.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/scripts/app/logic/EmployeeLogic.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/scripts/app/model/Employee.js")"></script>
+    
+    <!--Test Scripts -->
+
+   <script type="text/javascript" src="@Url.Content("~/Tests/app/Calculator/Calculator.Tests.js")"></script>
+   <script type="text/javascript" src="@Url.Content("~/Tests/app/views/mocha/Index.js")"></script>
+   <script type="text/javascript" src="@Url.Content("~/Tests/app/views/Employee/Main.Spies.Tests.js")"></script>
+   <script type="text/javascript" src="@Url.Content("~/Tests/app/views/Employee/Main.Stubs.Tests.js")"></script>
+   <script type="text/javascript" src="@Url.Content("~/Tests/app/logic/Employee.Logic.Tests.js")"></script>
+   <script type="text/javascript" src="@Url.Content("~/Tests/app/logic/Employee.Logic.ASync.Tests.js")"></script>
+
+    <script>mocha.run();</script> 
+}

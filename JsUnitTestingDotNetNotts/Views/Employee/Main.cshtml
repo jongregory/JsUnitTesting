@@ -1,0 +1,52 @@
+﻿@section Scripts
+{
+    <script type="text/javascript" src="@Url.Content("~/scripts/app/views/employee/Main.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/scripts/app/logic/EmployeeLogic.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/scripts/app/model/Employee.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/scripts/Services/EmployeeService.js")"></script>
+}
+
+
+<form class="form-horizontal">
+    <div id="content" class="container container--content">
+        <div class="row-fluid">
+            <div class="span8">
+                <div class="control-group">
+                    <label class="control-label" for="inputID">Id</label>
+                    <div class="controls">
+                        <input type="text" id="inputID" name="inputID" placeholder="Id">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="inputName">Name</label>
+                    <div class="controls">
+                        <input type="text" id="inputName" name="inputName" placeholder="Full Name">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="inputAge">Name</label>
+                    <div class="controls">
+                        <input type="text" id="inputAge" name="inputAge" placeholder="Age">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="selectRole">Role</label>
+                    <div class="controls">
+                        <select id="selectRole" name="selectRole" >
+                            <option>Developer</option>
+                            <option>Tester</option>
+                            <option>Manager</option>
+                            <option>Business Analyst</option>
+                            <option>Architect</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button id="saveButton" name="cancelButton" type="button" class="btn btn-primary">Save changes</button>
+                    or
+                    <button id="cancelButton" name="cancelButton" type="button" class="btn  btn-link  btn--cancel">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
